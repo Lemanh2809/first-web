@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-bar {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+.sticky {
+    opacity: 0.8;
+}
+
+.list-menu {
+    display: flex;
+    flex-direction: row;
+}
+.list-menu li {
+    margin-left: 20px;
+}
+.list-menu li a {
+    color: #6cbde1;
+    font-size: 18px;
+    font-weight: 500;
+}
+.list-menu li a:hover {
+    color: rgb(225, 25, 215);
+    transition: all 0.3s ease-in-out;
+}
+.logo {
+    margin-right: 30px;
+    margin-left: 50px;
+    border: 1px solid #6cbde1;
+    background-color: #d0e2e991;
+    padding: 6px 6px;
+    border-radius: 8px;
+}
+.logo a {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(225, 25, 215);
+}   
+.logo a span {
+    color: #6cbde1;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+.giohang {
+    margin-right: 30px;
+    position: relative;
+}
+.giohang a i {
+    font-size: 20px;
+    color: rgb(35, 87, 191);
+}
+.giohang a i:hover {
+    color: rgb(225, 25, 215);
+    transition: all 0.3s ease-in-out;
+}
+.giohang a span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid rgb(35, 87, 191);
+    background-color: rgb(35, 87, 191);
+    color: #fff;
+    border-radius: 100%;
+    bottom: 22px;
+    left: 15px;
+    right: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.search-icon input{
+    padding: 8px 12px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(35, 87, 191);
+    width: 250px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.search-icon i {
+    padding: 10px 10px;
+    border: 1px solid rgb(35, 87, 191);
+    border-radius: 5px;
+    color:rgb(35, 87, 191);
+}
+.search-icon i:hover {
+    background-color: rgb(35, 87, 191);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* banner styling */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* sanpham */
+.sanpham {
+    width: 75%;
+    margin: 50px auto;
+}
+.all-sanpham {
+    height: 200px;
+    background-color: #6cbde1;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 60px;
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+}
+.category {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    max-width: 1180px;
+    width: 100%;
+}
+.row-1, .row-2, .row-3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sanpham-tshirt {
+    border: 1px solid #666;
+    max-width: 360px;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    padding: 10px 15px;
+}
+.sanpham-tshirt:hover {
+    transform: translateY(-12%);
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0px 5px 30px 10px rgba(119, 213, 244, 0.5);
+}
+.sanpham-tshirt img {
+    width: 150px;
+    height: 150px;
+}
+.sanpham-tshirt img:hover {
+    transform: translateY(-10%);
+    transition: all 0.3s ease;
+}
+.sanpham-tshirt .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 20px;
+}
+.sanpham-tshirt .content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6cbde1;
+    padding-bottom: 5px;
+}
+.sanpham-tshirt .content .price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #175976;
+}
+.sanpham-tshirt .content p {
+    padding-top: 5px;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+    padding-bottom: 10px;
+}
+.buy-now {
+    background-color: rgb(255, 111, 0);
+    border: 1px solid rgb(255, 111, 0);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 40px;
+    transform: translateY(50%);
+}
+.buy-now:hover {
+    background-color: orange;
+    border: 1px solid orange;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+/* footer style */
+
+.footer {
+    background-color: #ba815e;
+    width: 100%;
+    height: 220px;
+    padding-top: 20px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    width: 100%;
+    height: 80%;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border: 2px solid #a7a3a3;
+    border-radius: 10px;
+    background-color: #573b29a7;
+}
+.column-right, .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+}
+.column-left a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.column-left a:hover {
+    color: rgb(255, 111, 0);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-20%);
+}
+.column-right p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.column-right p span {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 111, 0);
+}
