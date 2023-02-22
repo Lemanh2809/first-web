@@ -6,4 +6,4 @@ function myFunction() {
     } else {
         menuEl.classList.remove("sticky");
     }
-}
+}   
